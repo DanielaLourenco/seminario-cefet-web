@@ -9,21 +9,21 @@ self.analytics.trackingId = 'UA-77119321-2';
 
 self.addEventListener('push', function(event) {
   console.log('Received push');
-  let notificationTitle = 'Message the King!';
+  let notificationTitle = 'Mensagem do Rei William Wonka Wilkinson!';
   const notificationOptions = {
     body: 'Thanks for sending this push msg.',
-    icon: '/images/king.png',
+    icon: './images/king.gif',
     badge: './images/badge-72x72.png',
     tag: 'simple-push-demo-notification',
     data: {
-      url: 'https://developers.google.com/web/fundamentals/getting-started/push-notifications/',
+      url: 'index.html',
     },
   };
 
   if (event.data) {
     const dataText = event.data.text();
-    notificationTitle = 'Received Payload';
-    notificationOptions.body = `Push data: '${dataText}'`;
+    notificationTitle = 'Mensagem do Rei William Wonka Wilkinson!';
+    notificationOptions.body = `'${dataText}'`;
   }
 
   event.waitUntil(
