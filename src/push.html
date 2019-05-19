@@ -6,12 +6,12 @@
 
   <title>Simple Push Demo</title>
 
-  <meta name="theme-color" content="#2e3aa1">
+ 
 
   <link rel="manifest" href="./manifest.json">
 
-  <link rel="shortcut icon" href="./images/logo-32x32.png">
-
+  <link rel="stylesheet" href="css/api1.css">	
+  <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/medieval-castles/66/5-512.png"
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
@@ -21,20 +21,8 @@
 </head>
 <body>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Push Demo</span>
-        <div class="mdl-layout-spacer"></div>
-        <nav class="mdl-navigation mdl-layout--large-screen-only">
-          <!-- This needs fixing -->
-          <!-- <a class="mdl-navigation__link" href="/encryption-test.html">Encryption Tests</a> -->
-          <a class="mdl-navigation__link" href="https://github.com/gauntface/simple-push-demo">GitHub</a>
-          <a class="mdl-navigation__link" href="https://developers.google.com/web/fundamentals/primers/push-notifications/">Docs</a>
-          <a class="mdl-navigation__link" href="https://developers.google.com/web/fundamentals/getting-started/push-notifications/">Guide</a>
-        </nav>
-      </div>
-    </header>
-
+      <a href="exemplo.html" class="arrow arrow-left" title="Anterior"></a>
+      <a href="referencias.html" class="arrow arrow-right" title="Próximo"></a>    
     <main>
       <div class="push-switch-container js-push-switch-container">
         <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect js-push-toggle-switch" for="switch-2">
@@ -42,7 +30,6 @@
           <span class="mdl-switch__label">Enable Push Notifications</span>
         </label>
       </div>
-
       <div class="content-overlap-wrapper">
         <div class="send-push-options js-send-push-options">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label payload-textfield js-payload-textfield-container hidden">
@@ -110,13 +97,7 @@
             <hr />
           </div>
 
-          <p><strong>Notes:</strong></p>
-
-          <ul>
-            <li>For more info on the encryption of payloads: <a href="https://developers.google.com/web/updates/2016/03/web-push-encryption?hl=en">Check out this link for info</a>.</li>
-            <li>Not seeing a notification in Firefox? <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1233086">This bug may be the culprit.</a> Check the logs for a note when the push is received though.</li>
-            <li>Opera supports push on Android, but not on desktop and there is no feature detect for this :(. Bug has been filed on their private issue tracker.</li>
-          </ul>
+          
         </div>
         <div class="error-message-container js-error-message-container">
           <h1 class="error-title js-error-title"></h1>
