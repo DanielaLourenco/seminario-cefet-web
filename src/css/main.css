@@ -99,6 +99,10 @@ pre {
 }
 
 .push-switch-container {
+  position:fixed;
+  top:50%;
+  right: 50%;
+  z-index:1;
   text-align: center;
 }
 
